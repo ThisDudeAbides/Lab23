@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "ShoppingList";
+}
+
+<h2>ShoppingList</h2>
+<table class=" table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var c in ViewBag.ItemList)
+    {
+        <tr>
+            <td>@c.Name</td>
+            <td>@c.Description</td>
+            <td>@c.Quantity</td>
+            <td>@c.Price</td>
+          
+         </tr>
+                
+    }
+</table>

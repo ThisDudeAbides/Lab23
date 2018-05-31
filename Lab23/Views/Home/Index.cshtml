@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+    <h1>Welcome to the Grand Circus Coffee Shop</h1>
+    <p class="lead"> This is the home for not only delicious coffee, but for delicious tech stuff too</p>
+
+    <table class=" table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        @foreach (var c in ViewBag.ItemList)
+    {
+        <tr>
+            <td>@c.Name</td>
+            <td>@c.Description</td>
+            <td>@c.Quantity</td>
+            <td>@c.Price</td>
+            <td>
+                
+        </tr>
+}
+    </table>
