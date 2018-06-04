@@ -62,7 +62,7 @@
           <Property Name="BDay" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="GC_Coffee_ShopEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="GCCoffeeShopEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Items" EntityType="Self.Item" />
           <EntitySet Name="Users" EntityType="Self.User" />
         </EntityContainer>
@@ -71,7 +71,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="GC_Coffee_ShopModelStoreContainer" CdmEntityContainer="GC_Coffee_ShopEntities">
+        <EntityContainerMapping StorageEntityContainer="GC_Coffee_ShopModelStoreContainer" CdmEntityContainer="GCCoffeeShopEntities">
           <EntitySetMapping Name="Items">
             <EntityTypeMapping TypeName="GC_Coffee_ShopModel.Item">
               <MappingFragment StoreEntitySet="Items">

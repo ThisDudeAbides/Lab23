@@ -13,10 +13,10 @@ namespace Lab23.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class GC_Coffee_ShopEntities : DbContext
+    public partial class GCCoffeeShopEntities : DbContext
     {
-        public GC_Coffee_ShopEntities()
-            : base("name=GC_Coffee_ShopEntities")
+        public GCCoffeeShopEntities()
+            : base("name=GCCoffeeShopEntities")
         {
         }
     

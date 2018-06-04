@@ -186,8 +186,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Models\CoffeeShopDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CoffeeShopDB.Context.cs</LastGenOutput>
       <DependentUpon>CoffeeShopDB.edmx</DependentUpon>
+      <LastGenOutput>CoffeeShopDB.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\CoffeeShopDB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -225,7 +225,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\_Layouut.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
@@ -234,7 +233,9 @@
     <Content Include="Views\Home\UserRegistration.cshtml" />
     <Content Include="Views\Home\Confirm.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\ItemList.cshtml" />
+    <Content Include="Views\Home\Admin.cshtml" />
+    <Content Include="Views\Home\AddItemDetails.cshtml" />
+    <Content Include="Views\Home\UpdateItemDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

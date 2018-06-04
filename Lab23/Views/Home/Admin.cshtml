@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Admin";
+}
+@model Lab23.Models.Item
+<h2>Admin</h2>
+<form action="/Home/Admin" method="get">
+
+    <table class=" table">
+
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        @foreach (var c in ViewBag.ItemList)
+        {
+            <tr>
+                <td>@c.Name</td>
+                <td>@c.Description</td>
+                <td>@c.Quantity</td>
+                <td>@c.Price</td>
+                <td>
+                    <a href="/Home/DeleteItem?Name=@c.Name" onclick="return confirm('Are you sure you want to delete')" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-trash"></span> Delete<br />
+                    </a>
+                    <a href="/Home/UpdateItemDetails?Name=@c.Name" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-pencil"></span> Edit
+                    </a>
+            </tr>
+        }
+    </table>
+    <a href="~/Home/AddItemDetails" class="btn btn-default">Add Item</a>
+</form>
